@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
-        <div className='w-2/4 mx-auto bg-white'>
+        <div className='w-2/4 mx-auto bg-white rounded-lg shadow-lg'>
             <div className='py-4 flex justify-around'>
                     <Button color="neutral" variant="contained">
                         <Link to="/">
