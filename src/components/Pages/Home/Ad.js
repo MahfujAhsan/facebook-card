@@ -59,7 +59,7 @@ const Ad = ({ post, refetch }) => {
                     <button className='px-3 py-2 bg-slate-300 hover:bg-slate-400 rounded-md font-semibold btn'>Donate Now</button>
                 </div>
             </section>
-            <section className='mx-4 py-3 border-b-2 border-gray-600 flex justify-between'>
+            <section className='mx-4 py-3 border-b-2 border-gray-200 flex justify-between'>
                 <div className='flex items-center'>
                     <div>
                         <FavoriteIcon fontSize='small' className='text-red-700 -mr-2' />
