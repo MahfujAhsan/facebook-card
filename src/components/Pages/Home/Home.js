@@ -10,7 +10,7 @@ const Home = () => {
         return <Loader />
     }
     return (
-        <div className='my-8 w-2/4 mx-auto'>
+        <div className='my-8 w-11/12 lg:w-5/12 mx-auto'>
             <div>
                 {
                     data.data.map(post => <Ad key={post._id} post={post} refetch={refetch} />)

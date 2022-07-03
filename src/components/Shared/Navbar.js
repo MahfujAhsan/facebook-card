@@ -10,35 +10,27 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
-        <div className='w-2/4 mx-auto bg-white rounded-lg shadow-lg'>
-            <div className='py-4 flex justify-around'>
-                    <Button color="neutral" variant="contained">
-                        <Link to="/">
-                            <HomeIcon fontSize='large' />
-                        </Link>
-                    </Button>
-                    <Button color="neutral" variant="contained">
-                        <Link to="/pages">
-                            <FlagIcon fontSize='large' />
-                        </Link>
-                    </Button>
-                    <Button color="neutral" variant="contained">
-                        <Link to="/watch">
-                            <SubscriptionsIcon fontSize='large' />
-                        </Link>
-                    </Button>
-                    <Button color="neutral" variant="contained">
-                        <Link to="groups">
-                            <SupervisedUserCircleIcon fontSize='large' />
-                        </Link>
-                    </Button>
-                    <Button color="neutral" variant="contained">
-                        <Link to="/gaming">
-                            <SportsEsportsIcon fontSize='large' />
-                        </Link>
-                    </Button>
-            </div>
-        </div>
+        <section className='lg:w-5/12 mx-auto bg-white rounded-lg shadow-lg'>
+            <nav className='py-4 flex justify-around px-4'>
+                <Link to="/">
+                    <Button color="primary" variant="contained"><HomeIcon fontSize='large' /></Button>
+                </Link>
+                <Link className='px-1' to="/pages">
+                    <Button color="primary" variant="contained"><FlagIcon fontSize='large' /></Button>
+                </Link>
+                <Link to="/watch">
+                    <Button color="primary" variant="contained"><SubscriptionsIcon fontSize='large' /></Button>
+                </Link>
+                <Link className='px-1' to="groups">
+                    <Button color="primary" variant="contained"> <SupervisedUserCircleIcon fontSize='large' /></Button>
+                </Link>
+                <Link to="/gaming">
+                    <Button color="primary" variant="contained">
+                        <SportsEsportsIcon fontSize='large' /></Button>
+                </Link>
+
+            </nav>
+        </section>
     );
 };
 

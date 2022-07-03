@@ -3,9 +3,7 @@ import loadingGif from "../../assets/css-car-preloader.gif";
 
 const Loader = () => {
     return (
-        <div>
-            <img className='w-screen' src={loadingGif} alt="" />
-        </div>
+        <img className='w-full h-full' src={loadingGif} alt="spinner" />
     );
 };
 
