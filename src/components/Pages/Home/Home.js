@@ -5,7 +5,7 @@ import Loader from '../../Shared/Loader';
 import Ad from './Ad';
 
 const Home = () => {
-    const { data, isLoading, refetch } = useQuery("ad", () => axios.get(`http://localhost:5000/facebookAd`));
+    const { data, isLoading, refetch } = useQuery("ad", () => axios.get(`https://nameless-castle-67868.herokuapp.com/facebookAd`));
     if(isLoading) {
         return <Loader />
     }
