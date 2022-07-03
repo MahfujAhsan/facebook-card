@@ -36,7 +36,7 @@ function App() {
             <Route path="/pages" element={<FacebookPages/>} />
             <Route path="/watch" element={<FacebookVideos />} />
             <Route path="/groups" element={<FacebookGroups />} />
-            <Route path="/games" element={<FacebookGames />} />
+            <Route path="/gaming" element={<FacebookGames />} />
           </Routes>
         </div>
       </>
